@@ -23,10 +23,10 @@ flame_generate_dataframe <- function(a_list) {
     def <- flame_assign_attribute_values(a_list, "DEF"),
     speed <- flame_assign_attribute_values(a_list, "SPEED"),
     jump <- flame_assign_attribute_values(a_list, "JUMP"),
-    all_stat <- flame_assign_attribute_values(a_list, "%ALL"),
-    req_lv <- flame_assign_attribute_values(a_list, "REQ"),
-    boss <- flame_assign_attribute_values(a_list, "%BOSS"),
-    dmg <- flame_assign_attribute_values(a_list, "%DMG")
+    all_stat <- flame_assign_attribute_values(a_list, "ALL"),
+    boss <- flame_assign_attribute_values(a_list, "BOSS"),
+    dmg <- flame_assign_attribute_values(a_list, "DMG"),
+    req_lv <- flame_assign_attribute_values(a_list, "REQ")
   )
 
   dplyr::bind_cols(x)

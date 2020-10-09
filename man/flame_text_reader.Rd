@@ -4,10 +4,14 @@
 \alias{flame_text_reader}
 \title{Flame Text Reader}
 \usage{
-flame_text_reader(directory)
+flame_text_reader(directory, single = FALSE, file = NA)
 }
 \arguments{
 \item{directory}{Folder directory that contains the files}
+
+\item{single}{A boolean statement for if you want to parse a single file or the whole folder}
+
+\item{file}{File name if you want to parse single file}
 }
 \description{
 Coverts all TXT files in a folder into a formatted list that works with the database generator. Current requires all files in folder to be TXT files.
