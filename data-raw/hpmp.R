@@ -1,10 +1,10 @@
-## HP/MP Values
+## HP/MP Tier Values
 library(tidyverse)
 library(usethis)
 
 hpmp <- tibble(
   "LV" = seq(0, 200, 10),
-  "T1" = seq(3, 583, 29),
+  "T1" = c(3, seq(30, 600, 30)),
   "T2" = 2 * T1,
   "T3" = 3 * T1,
   "T4" = 4 * T1,
