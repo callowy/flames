@@ -16,8 +16,8 @@ df <- tibble(
 mainstatdual <- as_tibble(t(as.matrix(df)))
 colnames(mainstatdual) <- c("T1", "T2", "T3", "T4", "T5", "T6", "T7")
 mainstatdual <- add_column(mainstatdual,
-           "Lv" = seq(0, 200, 10),
-           .before = "T1" )
+           "LV" = seq(0, 200, 10),
+           .before = "T1")
 
 write_csv(mainstatdual, "data-raw/mainstatdual.csv")
 usethis::use_data(mainstatdual, overwrite = TRUE)
