@@ -40,6 +40,7 @@ is_matching <- function(val, type, lv) {
     str_c(collapse = "|")
 
   if(str_detect(val, mainstatsdef)){
-
+    y1 <- mainstat[mainstat$LV == lv]
+    near(val, y1)
   }
 }
